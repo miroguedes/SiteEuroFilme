@@ -215,9 +215,9 @@ nav a :hover {
 }
 
 #orcamento img {
-    width: 550px;
+    width: 400px;
     height: auto;
-    padding-right: 250px;
+    padding-right: 50px;
     margin-top: 50px;
 }
 
@@ -254,6 +254,7 @@ footer {
 footer span p {
     text-align: center;
     color: white;
+    
 }
 
 
