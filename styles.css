@@ -6,50 +6,40 @@
 }
 
 body {
-    max-width: 1440px;
+    max-width: 1240px;
     margin:  auto;
 }
 
-
-
-.topo {
+#top {
+    height: 55px;
+    background-color: #3C4473;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    height: 55px;
-    background-color: #3C4473;
+    padding-right: 100px;
+    color: white;
     position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    padding-right: 130px;
-    width: 100vw;
-    margin: auto;
+    width: 92%;
     
+      
 }
 
-.topo img {
+.horarios {
+    font-size: .9rem;
+}
+
+#zap {
     width: 150px;
     height: auto;
-    display: flex;
-    
- 
 }
+
+
 
 #phone {
     width: 25px;
 }
 
-.topo span {
-    color: white;
-    font-size: .6rem;
-    margin-right: 20px;
-}
-
-.topo p {
-    color: white;
-}
 
 nav {
     display: flex;
@@ -57,9 +47,11 @@ nav {
     height: 105px;
     justify-content: space-between;
     align-items: center;
-    padding-top: 5px;
-    border-bottom: .5px solid #A63F48;
-    margin: 56px auto;
+    padding-top: 110px;
+    padding-bottom: 30px;
+    
+    /*border-bottom: .5px solid #A63F48;*/
+    
 }
 
 .logo {
