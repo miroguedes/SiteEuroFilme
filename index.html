@@ -38,8 +38,10 @@
        
     <section id="aempresa">
     
-    <span><h2>A EMPRESA</h2></span>
-    <!--<div><img src="imagens/aempresa.png" alt=""></div>-->
+    <div class="slide">
+        <span><h2>A EMPRESA</h2></span>
+        <div><img id="slide"></div>
+    </div>
     <span><p>Estabelecida estrategicamente próxima ao Rodoanel de São Paulo, saída da Rod. Raposo Tavares, a Eurofilme é uma empresa Brasileira, que atua em todo o território nacional.</p><br>
     <p>Trabalhamos com bobinas de Filme Stretch manual e máquina (com e sem tubete), e nosso preço está sempre baseado no peso líquido do filme.</p><br>
     <p>Preocupada com o meio ambiente, trabalhamos com logística reversa.</p><br><br><br>
@@ -49,25 +51,46 @@
     <p>Ser referência de excelência em produtos de embalagens flexíveis.</p></span>
     </section>
 
-    <section id="filmestretch">
-        <span><p><h3>FILME STRETCH</h3></p><br>
-        <p>O Filme Stretch, também conhecido como filme polietileno, é um filme plástico flexível esticável. Dessa forma, ele atua como um elástico sobre a carga, proporcionando uma força contrária aos produtos embalados. Isso permite a estabilização e a segurança completa dos produtos.</p><br>
-        <p>Vantagens do nosso Filme Stretch:</p><br>
-        <p>• Redução do peso da bobina manual</p>
-        <p> • Aplicador reutilizável de plástico</p>
-        <p> • Mais ergonomia na aplicação</p>
-        <p> • Mais rapidez e produtividade</p>
-        <p> • Redução de resíduos evitando contaminação</p>
-        <p> • Redução de custos relativos a resíduos</p>
-        <p> • Redução de acidentes de trabalho relativos a queimaduras com tubete</p>
-        <p> • Mais eficiência para a operação</p></span>
-        <div><img src="imagens/stretchprodutos.png" alt="filme stretch"></div>
-    </section>
-
-    <section id="fitapet">
-        <div><img src="imagens/Fitas-PET.webp" alt="fita pet"></div>
-        <span><p><h3>FITA PET</h3></p><br>
-        <p>A fita pet, também conhecida como fita de poliester é utilizada para arqueação de volumes pesados. As principais vantagens da arqueação com esse tipo de fita é que a fita pet tem um excelente custo benefício, além de ser uma fita de fácil manuseio.</p><br>
+    <section id="produtos">
+        <h2>NOSSOS PRODUTOS</h2>
+        <div id="filmestretch">
+            <span><p><h3>FILME STRETCH</h3></p><br>
+            <p>O Filme Stretch, também conhecido como filme polietileno, é um filme plástico flexível esticável. Dessa forma, ele atua como um elástico sobre a carga, proporcionando uma força contrária aos produtos embalados. Isso permite a estabilização e a segurança completa dos produtos.</p><br>
+            <p>Vantagens do nosso Filme Stretch:</p><br>
+            <p>• Redução do peso da bobina manual</p>
+            <p> • Aplicador reutilizável de plástico</p>
+            <p> • Mais ergonomia na aplicação</p>
+            <p> • Mais rapidez e produtividade</p>
+            <p> • Redução de resíduos evitando contaminação</p>
+            <p> • Redução de custos relativos a resíduos</p>
+            <p> • Redução de acidentes de trabalho relativos a queimaduras com tubete</p>
+            <p> • Mais eficiência para a operação</p></span>
+            <div><img src="imagens/stretchprodutos.png" alt="filme stretch"></div>
+            </div>
+        <div id="fitapet">
+            <div><img src="imagens/Fitas-PET.webp" alt="fita pet"></div>
+            <span><p><h3>FITA PET</h3></p><br>
+            <p>A fita pet, também conhecida como fita de poliester é utilizada para arqueação de volumes pesados. As principais vantagens da arqueação com esse tipo de fita é que a fita pet tem um excelente custo benefício, além de ser uma fita de fácil manuseio.</p><br>
+            </div>
+        <div id="fitaadesiva">
+            <span><p><h3>FITA ADESIVA</h3></p><br>
+            <p>O Filme Stretch, também conhecido como filme polietileno, é um filme plástico flexível esticável. Dessa forma, ele atua como um elástico sobre a carga, proporcionando uma força contrária aos produtos embalados. Isso permite a estabilização e a segurança completa dos produtos.</p><br>
+            <p>Vantagens do nosso Filme Stretch:</p><br>
+            <p>• Redução do peso da bobina manual</p>
+            <p> • Aplicador reutilizável de plástico</p>
+            <p> • Mais ergonomia na aplicação</p>
+            <p> • Mais rapidez e produtividade</p>
+            <p> • Redução de resíduos evitando contaminação</p>
+            <p> • Redução de custos relativos a resíduos</p>
+            <p> • Redução de acidentes de trabalho relativos a queimaduras com tubete</p>
+            <p> • Mais eficiência para a operação</p></span>
+            <div><img src="imagens/fitaadesiva.webp" alt="fita adesiva"></div>
+            </div>
+        <div id="fitapp">
+            <div><img src="imagens/fitapp.png" alt="fita ppp"></div>
+            <span><p><h3>FITA PP</h3></p><br>
+            <p>A fita pet, também conhecida como fita de poliester é utilizada para arqueação de volumes pesados. As principais vantagens da arqueação com esse tipo de fita é que a fita pet tem um excelente custo benefício, além de ser uma fita de fácil manuseio.</p><br>
+        </div>
     </section>
 
     <section id="orcamento">
@@ -98,6 +121,25 @@
 
 
 </footer>
+
+<script> 
+    let slide = document.getElementById("slide");
+let images = ["imagens/1.jpeg" , "imagens/2.jpeg", "imagens/3.jpeg", "imagens/4.jpeg", "imagens/5.jpeg", "imagens/6.jpeg" ];
+let i = 0;
+
+function slideShow(){
+    slide.src = images[i];
+
+    if (i < images.length -1) {
+        i++;
+    }else {
+        i = 0;
+    }
+    setTimeout(slideShow, 2000);
+}
+slideShow();
+
+</script>
     
 
 
