@@ -199,7 +199,7 @@ nav a :hover {
 
 #filmestretch img {
     display: flex;
-    width: 450px;
+    width: 300px;
     height: auto;
     padding-left: 80px;
 }
